@@ -1,0 +1,163 @@
+body {
+    display: flex;
+    height: 100%;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+#mailandphoto {
+    display: flex;
+}
+
+#memberBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#memberBtn p {
+    margin-left: 5px;
+}
+
+table {
+    margin-top: 100px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.leftBar {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+.profilepic {
+    width: 75px;
+    border-radius: 100%;
+    padding: 10px 10px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    left: 5px;
+    bottom: 15px;
+}
+
+.newList {
+    display: flex;
+    width: 100%;
+    background-color: lightgrey;
+    margin-left: 5px;
+}
+
+#listSide {
+    width: 70%;
+    margin-left: 15px;
+    background-color: pink;
+}
+
+#popup {
+    border: 1px solid lightgray;
+    box-shadow: 10px 5px 5px #00000055;
+}
+
+#popup button {
+    margin: 0px 5px;
+    padding: 5px 5px;
+}
+
+#projectContainer li{
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    padding: 10px 0px;
+}
+
+#projectContainer li>div{
+    padding:5px 5px;
+}
+#projectContainer li div:nth-child(1){
+    width: 4px;
+    padding: 5px 0px;
+}
+
+#projectContainer li.active div:nth-child(1){
+    background-color:navy;
+}
+
+#projectContainer li div:nth-child(3){
+    flex-grow: 1;
+    cursor: pointer;
+}
+#projectContainer li:not(:hover) div:nth-child(4){
+    display: none;
+}
+#projectContainer li div:nth-child(5){
+    background-color: #eeeeee;
+    border-radius: 50%;
+}
+#projectContainer{
+    padding-left: 0px;
+}
+#taskListRoot{
+    height: 100%;
+    position:relative;
+    background-color: #7286d1;
+}
+#taskListRoot > div{
+    padding: 30px;
+}
+
+#taskListHeader{
+    font-size: 16pt;
+    color: white;
+}
+
+#taskListFooter {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #8397e3;
+}
+#taskListFooter > div{
+    display: flex;
+    flex-direction: row;
+    background-color: #dae0f6;
+    border-radius: 5px;
+    width:100%;
+}
+#taskListFooter div div{
+    padding: 0px 10px;
+}
+#taskListFooter div div:first-child{
+    padding-top: 8px;
+}
+#taskListFooter div div:last-child{
+    flex-grow: 1;
+}
+#taskListFooter input{
+    padding:10px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+#taskListContainer li {
+    padding : 15px;
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+#projectContainer li:hover {
+    background-color: lightgrey;
+}
